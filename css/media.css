@@ -2,6 +2,14 @@
   .container {
     max-width: 426px;
   }
+
+  .mb-tel-link {
+    font-size: 36px;
+  }
+
+  .form-input-email {
+    width: 398px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -71,6 +79,7 @@
 
   .features-list {
     gap: 72px 24px;
+    justify-content: center;
   }
 
   .features-item {

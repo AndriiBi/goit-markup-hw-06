@@ -54,10 +54,6 @@ img {
   height: auto;
 }
 
-input {
-  font-family: inherit;
-}
-
 .container {
   width: 100%;
   max-width: 1158px;
@@ -82,6 +78,10 @@ input {
   border-bottom: solid 1px #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  padding: 24px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-container {
@@ -112,7 +112,6 @@ input {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  /* margin-right: 76px; */
   display: inline-block;
 }
 
@@ -213,6 +212,12 @@ input {
   color: #404bbf;
 }
 
+.menu-open-btn {
+  border: none;
+  background: transparent;
+  margin-left: auto;
+}
+
 .menu-open-icon {
   fill: transparent;
   stroke: #2e2f42;
@@ -222,8 +227,8 @@ input {
   position: fixed;
   top: 0;
   z-index: 20;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: #fff;
   padding: 80px 35px 40px 40px;
   display: flex;
@@ -271,11 +276,16 @@ input {
 
 .mob-link {
   font-size: 36px;
+  color: #2e2f42;
   font-weight: 700;
   line-height: 1.12;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-current-studio {
+  color: #404bbf;
 }
 
 .mob-address {
@@ -291,7 +301,7 @@ input {
 
 .mob-tel-link {
   color: #4d5ae5;
-  font-size: 36px;
+  font-size: 29px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -731,7 +741,7 @@ input {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  width: 398px;
+  width: 300px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid #fff;
