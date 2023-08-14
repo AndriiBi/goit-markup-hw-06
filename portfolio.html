@@ -13,6 +13,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,8 +29,9 @@
           <a href="./index.html" class="logo-web link"
             >Web<span class="logo-studio link">Studio</span></a
           >
+
           <ul class="nav-list">
-            <li class="nav-list-item">
+            <li>
               <a href="./index.html" class="header-link link">Studio</a>
             </li>
             <li>
@@ -58,6 +60,78 @@
             </li>
           </ul>
         </address>
+        <button class="menu-open-btn" type="button" data-menu-open>
+          <svg class="menu-open-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-mob-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <button class="menu-close-btn" type="button" data-menu-close>
+            <svg class="mob-close-btn" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+          <ul class="mob-nav-list">
+            <li class="mob-nav-item">
+              <a href="./index.html" class="mob-link link mob-current-studio"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-nav-item">
+              <a href="./portfolio.html" class="mob-link link">Portfolio</a>
+            </li>
+            <li class="mob-nav-item">
+              <a href="" class="mob-link link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <address class="mob-address">
+          <ul class="mob-address-list">
+            <li>
+              <a href="tel:+110001111111" class="mob-tel-link link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="mob-address-link link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mob-socials-list">
+          <li class="mob-socials-item">
+            <a href="" class="mob-socials-link link">
+              <svg class="mob-socials" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-socials-item">
+            <a href="" class="mob-socials-link link">
+              <svg class="mob-socials" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-socials-item">
+            <a href="" class="mob-socials-link link">
+              <svg class="mob-socials" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-socials-item">
+            <a href="" class="mob-socials-link link">
+              <svg class="mob-socials" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -346,5 +420,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -3,6 +3,11 @@
     max-width: 426px;
   }
 
+  .mob-socials-list {
+    justify-content: flex-start;
+    gap: 56px;
+  }
+
   .mb-tel-link {
     font-size: 36px;
   }
@@ -99,7 +104,7 @@
   }
 
   .custom-list-item {
-    width: calc((100% - 48px) / 3);
+    width: 168px;
   }
 
   .footer-wrap {
@@ -213,6 +218,10 @@
   .features-title {
     text-align: start;
     font-size: 20px;
+  }
+
+  .features-title-text {
+    font-weight: 400;
   }
 
   .engage-section {
