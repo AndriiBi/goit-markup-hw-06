@@ -78,8 +78,12 @@
   .main-section-title {
     font-size: 56px;
     line-height: 1.07;
-    margin-bottom: 36px;
-    width: 496px;
+    max-width: 496px;
+    margin: 0 auto;
+  }
+
+  .order-btn {
+    margin-top: 36px;
   }
 
   .features-list {
@@ -218,9 +222,13 @@
   .main-section-title {
     font-size: 56px;
     line-height: 1.07;
-    margin-bottom: 48px;
-    width: 496px;
+    max-width: 496px;
+    margin: 0 auto;
     text-transform: none;
+  }
+
+  .order-btn {
+    margin-top: 48px;
   }
 
   .features-item {
