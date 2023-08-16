@@ -12,6 +12,30 @@
     font-size: 36px;
   }
 
+  @media (min-width: 429px) {
+    .main-section {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/dark-bg-tab-1x.jpg);
+    }
+
+    @media (min-resolution: 192dpi),
+      (min-resolution: 2dppx),
+      (min-device-pixel-ration: 2) {
+      .main-section {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ),
+          url(../images/dark-bg-tab.jpg);
+      }
+    }
+  }
+
   .form-input-email {
     width: 398px;
   }
@@ -75,6 +99,30 @@
     }
   }
 
+  @media (min-width: 769px) {
+    .main-section {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/working-people-bg.jpg);
+    }
+
+    @media (min-resolution: 192dpi),
+      (min-resolution: 2dppx),
+      (min-device-pixel-ration: 2) {
+      .main-section {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+          ),
+          url(../images/working-people-bg-2x.jpg);
+      }
+    }
+  }
+
   .main-section-title {
     font-size: 56px;
     line-height: 1.07;
@@ -114,6 +162,8 @@
   .footer-wrap {
     gap: 24px;
     align-items: baseline;
+    justify-content: flex-start;
+    max-width: 582px;
   }
 
   .footer-cover-text {
@@ -156,10 +206,6 @@
   }
 
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
     width: 408px;
   }
 }
